@@ -1,0 +1,415 @@
+{
+    "summary": {
+        "query": "pittsburgh pa",
+        "queryType": "NON_NEAR",
+        "queryTime": 75,
+        "numResults": 10,
+        "offset": 0,
+        "totalResults": 161,
+        "fuzzyLevel": 1
+    },
+    "results": [
+        {
+            "type": "Geography",
+            "id": "r7sPtED5r1n-9Ll7TWpoEQ",
+            "score": 4.6731739044,
+            "entityType": "Municipality",
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "municipality": "Pittsburgh",
+                "countrySecondarySubdivision": "Allegheny",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "Pittsburgh, PA"
+            },
+            "position": {
+                "lat": 40.44217,
+                "lon": -79.99496
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.5705,
+                    "lon": -80.11844
+                },
+                "btmRightPoint": {
+                    "lat": 40.29987,
+                    "lon": -79.86579
+                }
+            },
+            "boundingBox": {
+                "topLeftPoint": {
+                    "lat": 40.5705,
+                    "lon": -80.11844
+                },
+                "btmRightPoint": {
+                    "lat": 40.29987,
+                    "lon": -79.86579
+                }
+            },
+            "dataSources": {
+                "geometry": {
+                    "id": "00005550-3200-3c00-0000-000059a7b4e2"
+                }
+            }
+        },
+        {
+            "type": "Geography",
+            "id": "EiCdEe_JARtMqNJugozxhA",
+            "score": 4.2871193886,
+            "entityType": "Municipality",
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "municipality": "Pittsburgh",
+                "countrySecondarySubdivision": "Allegheny",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "Pittsburgh, PA"
+            },
+            "position": {
+                "lat": 40.49192,
+                "lon": -80.243
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.5119,
+                    "lon": -80.28257
+                },
+                "btmRightPoint": {
+                    "lat": 40.47258,
+                    "lon": -80.2019
+                }
+            },
+            "boundingBox": {
+                "topLeftPoint": {
+                    "lat": 40.5119,
+                    "lon": -80.28257
+                },
+                "btmRightPoint": {
+                    "lat": 40.47258,
+                    "lon": -80.2019
+                }
+            },
+            "dataSources": {
+                "geometry": {
+                    "id": "00005550-3200-3c00-0000-00004db977d2"
+                }
+            }
+        },
+        {
+            "type": "Geography",
+            "id": "G3LBRUrIlkmPZTaTGPC9AA",
+            "score": 4.267095089,
+            "entityType": "Municipality",
+            "matchConfidence": {
+                "score": 0.9478683893290848
+            },
+            "address": {
+                "municipality": "East Pittsburgh",
+                "countrySecondarySubdivision": "Allegheny",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "East Pittsburgh, PA"
+            },
+            "position": {
+                "lat": 40.40119,
+                "lon": -79.8349
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.40531,
+                    "lon": -79.84666
+                },
+                "btmRightPoint": {
+                    "lat": 40.39082,
+                    "lon": -79.8301
+                }
+            },
+            "boundingBox": {
+                "topLeftPoint": {
+                    "lat": 40.40531,
+                    "lon": -79.84666
+                },
+                "btmRightPoint": {
+                    "lat": 40.39082,
+                    "lon": -79.8301
+                }
+            },
+            "dataSources": {
+                "geometry": {
+                    "id": "00005550-3200-3c00-0000-000059a7b09b"
+                }
+            }
+        },
+        {
+            "type": "Geography",
+            "id": "k3-1P_oVkkOXeALSmALgIw",
+            "score": 4.2184157372,
+            "entityType": "Municipality",
+            "matchConfidence": {
+                "score": 0.8895814499217618
+            },
+            "address": {
+                "municipality": "University of Pittsburgh Johnstown",
+                "countrySecondarySubdivision": "Cambria",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "University of Pittsburgh Johnstown, PA"
+            },
+            "position": {
+                "lat": 40.26882,
+                "lon": -78.83665
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.27103,
+                    "lon": -78.83791
+                },
+                "btmRightPoint": {
+                    "lat": 40.25497,
+                    "lon": -78.82115
+                }
+            },
+            "boundingBox": {
+                "topLeftPoint": {
+                    "lat": 40.27103,
+                    "lon": -78.83791
+                },
+                "btmRightPoint": {
+                    "lat": 40.25497,
+                    "lon": -78.82115
+                }
+            },
+            "dataSources": {
+                "geometry": {
+                    "id": "00005550-3200-3c00-0000-000059a7b30c"
+                }
+            }
+        },
+        {
+            "type": "Geography",
+            "id": "jzYFV-t2HSudA0qFbnaT5Q",
+            "score": 4.2184157372,
+            "entityType": "Municipality",
+            "matchConfidence": {
+                "score": 0.8908454245770626
+            },
+            "address": {
+                "municipality": "University of Pittsburgh Bradford",
+                "countrySecondarySubdivision": "McKean",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "University of Pittsburgh Bradford, PA"
+            },
+            "position": {
+                "lat": 41.94427,
+                "lon": -78.67276
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 41.94804,
+                    "lon": -78.67654
+                },
+                "btmRightPoint": {
+                    "lat": 41.94132,
+                    "lon": -78.66793
+                }
+            },
+            "boundingBox": {
+                "topLeftPoint": {
+                    "lat": 41.94804,
+                    "lon": -78.67654
+                },
+                "btmRightPoint": {
+                    "lat": 41.94132,
+                    "lon": -78.66793
+                }
+            },
+            "dataSources": {
+                "geometry": {
+                    "id": "ad80e8c3-fda4-4408-bca3-c114959071c0"
+                }
+            }
+        },
+        {
+            "type": "Street",
+            "id": "HZgJ2n_0t97YmwfvkgosoA",
+            "score": 3.8105280399,
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "streetName": "Pittsburgh Avenue",
+                "countrySecondarySubdivision": "Erie",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "Pittsburgh Avenue, Erie, PA"
+            },
+            "position": {
+                "lat": 42.09968,
+                "lon": -80.12713
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 42.10858,
+                    "lon": -80.1393
+                },
+                "btmRightPoint": {
+                    "lat": 42.0906,
+                    "lon": -80.11505
+                }
+            }
+        },
+        {
+            "type": "Street",
+            "id": "QPPOhSZCWxkucQn7sX_7TA",
+            "score": 3.8105280399,
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "streetName": "Pittsburgh Avenue",
+                "municipality": "Clairton",
+                "countrySecondarySubdivision": "Allegheny",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "Pittsburgh Avenue, Clairton, PA",
+                "localName": "Clairton"
+            },
+            "position": {
+                "lat": 40.30416,
+                "lon": -79.88545
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.30549,
+                    "lon": -79.88638
+                },
+                "btmRightPoint": {
+                    "lat": 40.30303,
+                    "lon": -79.88405
+                }
+            }
+        },
+        {
+            "type": "Street",
+            "id": "5OYCdyXonRFo4gik_UHSqQ",
+            "score": 3.8105280399,
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "streetName": "South Pittsburgh Street",
+                "countrySecondarySubdivision": "Fayette",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "South Pittsburgh Street, Fayette, PA"
+            },
+            "position": {
+                "lat": 40.00283,
+                "lon": -79.58877
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.01173,
+                    "lon": -79.59972
+                },
+                "btmRightPoint": {
+                    "lat": 39.99374,
+                    "lon": -79.57624
+                }
+            }
+        },
+        {
+            "type": "Street",
+            "id": "s9H9e-SrzC6Zl2W7e9YgfQ",
+            "score": 3.8105280399,
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "streetName": "South Pittsburgh Street",
+                "countrySecondarySubdivision": "Butler",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "South Pittsburgh Street, Butler, PA"
+            },
+            "position": {
+                "lat": 40.79399,
+                "lon": -80.12788
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.79678,
+                    "lon": -80.12844
+                },
+                "btmRightPoint": {
+                    "lat": 40.79096,
+                    "lon": -80.12574
+                }
+            }
+        },
+        {
+            "type": "Street",
+            "id": "LqmvXGWzXhyqdUu38uqqEg",
+            "score": 3.8105280399,
+            "matchConfidence": {
+                "score": 1
+            },
+            "address": {
+                "streetName": "Pittsburgh Road",
+                "countrySecondarySubdivision": "Beaver",
+                "countrySubdivision": "PA",
+                "countrySubdivisionName": "Pennsylvania",
+                "countryCode": "US",
+                "country": "United States",
+                "countryCodeISO3": "USA",
+                "freeformAddress": "Pittsburgh Road, Beaver, PA"
+            },
+            "position": {
+                "lat": 40.72016,
+                "lon": -80.26379
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 40.73031,
+                    "lon": -80.27449
+                },
+                "btmRightPoint": {
+                    "lat": 40.71233,
+                    "lon": -80.25076
+                }
+            }
+        }
+    ]
+}
