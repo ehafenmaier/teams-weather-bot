@@ -1,11 +1,11 @@
-﻿{
+{
   "profiles": {
     // Debug project within Teams
     "Microsoft Teams (browser)": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
-      "launchUrl": "https://teams.microsoft.com/l/app/%TEAMSAPPID%?installAppPackage=true&webjoin=true&appTenantId=%TENANTID%&login_hint=%USERNAME%",
+      "launchUrl": "https://teams.microsoft.com/l/app/d9ecad6c-494b-427f-be49-795a58d0cfbd?installAppPackage=true&webjoin=true&appTenantId=1988ec90-a882-470f-b488-cc1faac1a0bb&login_hint=ehafenmaier@wchfq.onmicrosoft.com",
       "applicationUrl": "http://localhost:5130",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

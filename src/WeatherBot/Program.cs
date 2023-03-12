@@ -1,9 +1,10 @@
-using WeatherBot;
-using WeatherBot.Commands;
+using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.TeamsFx.Conversation;
-using Microsoft.Bot.Builder;
+using WeatherBot;
+using WeatherBot.AzureMaps;
+using WeatherBot.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,12 @@ builder.Services.AddSingleton(sp =>
 
     return new ConversationBot(options);
 });
+
+// Configure Azure Maps options
+builder.Services.Configure<AzureMapsOptions>(builder.Configuration.GetSection("AzureMaps"));
+
+// Create Azure Maps service
+builder.Services.AddSingleton<IAzureMapsService, AzureMapsService>();
 
 // Create the bot as a transient. In this case the ASP Controller is expecting an IBot.
 builder.Services.AddTransient<IBot, TeamsBot>();
