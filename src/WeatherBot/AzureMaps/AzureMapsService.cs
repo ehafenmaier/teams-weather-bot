@@ -67,7 +67,7 @@ namespace WeatherBot.AzureMaps
 
         public async Task<string> GetWeatherForLocationAsync(LatLong location)
         {
-            var url = GetCurrentConditionsUrlString(location);
+            var url = GetHourlyForecastUrlString(location);
             
             try
             {
@@ -80,6 +80,8 @@ namespace WeatherBot.AzureMaps
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
+                    var hourlyForecast = JsonSerializer.Deserialize<WeatherHourlyForecast>(content);
+
                     return content;
                 }
 
@@ -129,6 +131,19 @@ namespace WeatherBot.AzureMaps
 
             sb.AppendFormat("currentConditions/json?subscription-key={0}", _mapsOptions.APIKey);
             sb.AppendFormat("&api-version=1.1&query={0},{1}&unit=imperial", location.Latitude, location.Longitude);
+
+            return sb.ToString();
+        }
+
+        private string GetHourlyForecastUrlString(LatLong location)
+        {
+            if (location == null)
+                return null;
+
+            var sb = new StringBuilder();
+
+            sb.AppendFormat("forecast/hourly/json?subscription-key={0}", _mapsOptions.APIKey);
+            sb.AppendFormat("&api-version=1.1&query={0},{1}&unit=imperial&duration=12", location.Latitude, location.Longitude);
 
             return sb.ToString();
         }
