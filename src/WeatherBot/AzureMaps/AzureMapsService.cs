@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using static Microsoft.Graph.Constants;
 
 namespace WeatherBot.AzureMaps
 {
@@ -9,6 +10,7 @@ namespace WeatherBot.AzureMaps
     public interface IAzureMapsService
     {
         Task<LatLong> GetLocationByAddressPartsAsync(AddressParts addressParts);
+        Task<string> GetWeatherForLocationAsync(LatLong location);
     }
     #endregion
 
@@ -39,7 +41,7 @@ namespace WeatherBot.AzureMaps
             try
             {
                 using var httpClient = new HttpClient();
-                httpClient.BaseAddress = new Uri(_mapsOptions.BaseAddress);
+                httpClient.BaseAddress = new Uri(_mapsOptions.BaseAddressGeocode);
                 httpClient.DefaultRequestHeaders.Accept.Clear();
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -61,6 +63,33 @@ namespace WeatherBot.AzureMaps
             }
 
             return latlong;
+        }
+
+        public async Task<string> GetWeatherForLocationAsync(LatLong location)
+        {
+            var url = GetCurrentConditionsUrlString(location);
+            
+            try
+            {
+                using var httpClient = new HttpClient();
+                httpClient.BaseAddress = new Uri(_mapsOptions.BaseAddressWeather);
+                httpClient.DefaultRequestHeaders.Accept.Clear();
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                var response = await httpClient.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    return content;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{message}", ex.Message);
+                return null;
+            }
         }
         #endregion
 
@@ -89,6 +118,19 @@ namespace WeatherBot.AzureMaps
                 return null;
 
             return sb.ToString()[..^1];
+        }
+
+        private string GetCurrentConditionsUrlString(LatLong location)
+        {
+            if (location == null)
+                return null;
+
+            var sb = new StringBuilder();
+
+            sb.AppendFormat("currentConditions/json?subscription-key={0}", _mapsOptions.APIKey);
+            sb.AppendFormat("&api-version=1.1&query={0},{1}&unit=imperial", location.Latitude, location.Longitude);
+
+            return sb.ToString();
         }
         #endregion
     }

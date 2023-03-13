@@ -36,11 +36,13 @@ namespace WeatherBot.Commands
         {
             _logger?.LogInformation($"Bot received message: {message.Text}");
 
-            var latlong = await _azureMapsService.GetLocationByAddressPartsAsync(new AddressParts
+            var location = await _azureMapsService.GetLocationByAddressPartsAsync(new AddressParts
             {
-                City = "Pittsburgh",
-                StateProvince = "PA"
+                City = "Salt Lake City",
+                StateProvince = "UT"
             });
+
+            var weather = await _azureMapsService.GetWeatherForLocationAsync(location);
 
             // Read adaptive card template
             var cardTemplate = await File.ReadAllTextAsync(_adaptiveCardFilePath, cancellationToken);
