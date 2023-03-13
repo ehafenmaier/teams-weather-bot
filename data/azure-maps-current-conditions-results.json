@@ -1,0 +1,168 @@
+{
+    "results": [
+        {
+            "dateTime": "2023-03-12T18:04:00-06:00",
+            "phrase": "Mostly cloudy",
+            "iconCode": 6,
+            "hasPrecipitation": false,
+            "isDayTime": true,
+            "temperature": {
+                "value": 49.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "realFeelTemperature": {
+                "value": 47.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "realFeelTemperatureShade": {
+                "value": 47.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "relativeHumidity": 63,
+            "dewPoint": {
+                "value": 37.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "wind": {
+                "direction": {
+                    "degrees": 338.0,
+                    "localizedDescription": "NNW"
+                },
+                "speed": {
+                    "value": 3.5,
+                    "unit": "mi/h",
+                    "unitType": 9
+                }
+            },
+            "windGust": {
+                "speed": {
+                    "value": 3.5,
+                    "unit": "mi/h",
+                    "unitType": 9
+                }
+            },
+            "uvIndex": 0,
+            "uvIndexPhrase": "Low",
+            "visibility": {
+                "value": 10.0,
+                "unit": "mi",
+                "unitType": 2
+            },
+            "obstructionsToVisibility": "",
+            "cloudCover": 90,
+            "ceiling": {
+                "value": 8500.0,
+                "unit": "ft",
+                "unitType": 0
+            },
+            "pressure": {
+                "value": 30.02,
+                "unit": "inHg",
+                "unitType": 12
+            },
+            "pressureTendency": {
+                "localizedDescription": "Steady",
+                "code": "S"
+            },
+            "past24HourTemperatureDeparture": {
+                "value": 3.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "apparentTemperature": {
+                "value": 51.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "windChillTemperature": {
+                "value": 49.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "wetBulbTemperature": {
+                "value": 43.0,
+                "unit": "F",
+                "unitType": 18
+            },
+            "precipitationSummary": {
+                "pastHour": {
+                    "value": 0.0,
+                    "unit": "in",
+                    "unitType": 1
+                },
+                "past3Hours": {
+                    "value": 0.01,
+                    "unit": "in",
+                    "unitType": 1
+                },
+                "past6Hours": {
+                    "value": 0.02,
+                    "unit": "in",
+                    "unitType": 1
+                },
+                "past9Hours": {
+                    "value": 0.04,
+                    "unit": "in",
+                    "unitType": 1
+                },
+                "past12Hours": {
+                    "value": 0.06,
+                    "unit": "in",
+                    "unitType": 1
+                },
+                "past18Hours": {
+                    "value": 0.06,
+                    "unit": "in",
+                    "unitType": 1
+                },
+                "past24Hours": {
+                    "value": 0.06,
+                    "unit": "in",
+                    "unitType": 1
+                }
+            },
+            "temperatureSummary": {
+                "past6Hours": {
+                    "minimum": {
+                        "value": 40.0,
+                        "unit": "F",
+                        "unitType": 18
+                    },
+                    "maximum": {
+                        "value": 50.0,
+                        "unit": "F",
+                        "unitType": 18
+                    }
+                },
+                "past12Hours": {
+                    "minimum": {
+                        "value": 35.0,
+                        "unit": "F",
+                        "unitType": 18
+                    },
+                    "maximum": {
+                        "value": 50.0,
+                        "unit": "F",
+                        "unitType": 18
+                    }
+                },
+                "past24Hours": {
+                    "minimum": {
+                        "value": 35.0,
+                        "unit": "F",
+                        "unitType": 18
+                    },
+                    "maximum": {
+                        "value": 50.0,
+                        "unit": "F",
+                        "unitType": 18
+                    }
+                }
+            }
+        }
+    ]
+}
