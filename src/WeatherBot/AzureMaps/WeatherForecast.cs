@@ -2,6 +2,12 @@
 
 namespace WeatherBot.AzureMaps
 {
+    public class WeatherHourlyForecast
+    {
+        [JsonPropertyName("forecasts")]
+        public List<WeatherForecast> Forecasts { get; set; }
+    }
+
     public class WeatherForecast
     {
         [JsonPropertyName("date")]
